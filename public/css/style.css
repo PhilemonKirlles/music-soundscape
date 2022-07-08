@@ -1,0 +1,22 @@
+/* Hero with navbar */
+.link-bar-4 {
+    width: 300px;
+    height: 22px;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.39);
+    color: #5125ad;
+    font-family: "Paprika";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rectangle-3 {
+    width: 840px;
+    height: 251px;
+    padding: 8px 8px 8px 8px;
+    background: #ffa834;
+    border-color: #d757f6;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+}
