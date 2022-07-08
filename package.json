@@ -1,7 +1,7 @@
 {
   "name": "music-soundscape",
   "version": "1.0.0",
-  "description": "",
+  "description": "music discution platform",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/PhilemonKirlles/music-soundscape.git"
   },
-  "author": "",
+  "author": "Philemon A. Kirlles",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PhilemonKirlles/music-soundscape/issues"
@@ -29,5 +29,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "keywords": [
+    "music",
+    "soundscape",
+    "culture",
+    "songs",
+    "composers",
+    "instrumentation"
+  ]
 }
