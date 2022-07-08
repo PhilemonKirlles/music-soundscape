@@ -20,3 +20,16 @@
     border-style: solid;
     border-radius: 3px 3px 3px 3px;
 }
+
+.header-3 {
+    width: 463px;
+    height: 71px;
+    box-shadow: 2px -5px 5px rgba(139, 81, 245, 0.75);
+    color: #5125ad;
+    font-family: "Paprika";
+    font-weight: bold;
+    font-size: 60px;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+}
