@@ -58,3 +58,17 @@
     border-radius: 3px 3px 3px 3px;
 }
 
+/* h2 article header */
+
+.h2 {
+    width: 366px;
+    height: 48px;
+    color: #5125ad;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 36px;
+    text-decoration: underline;
+    line-height: 1.2;
+    text-align: center;
+}
+
