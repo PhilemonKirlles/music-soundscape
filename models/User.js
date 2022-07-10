@@ -1,6 +1,7 @@
 
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/routes');
+const sequelize = require('../config/connection');
+//changed /routes to /connection bc I was getting an error (Error: Cannot find module '../config/routes' at Object.<anonymous> (/Users/chrispollio/Desktop/Uconn Homework/music-soundscape/models/User.js:3:19)
 
 // create our User model
 class User extends Model {}
