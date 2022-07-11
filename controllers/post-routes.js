@@ -13,7 +13,7 @@ router.get("/:id", async (req, res) => {
             include: [
                 {
                     model: Comment,
-                    //join of joined data
+                    //joined data
                     include: [
                         {
                             model: User,
