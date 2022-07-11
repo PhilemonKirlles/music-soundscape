@@ -4,38 +4,38 @@ const { Post, User, Comment, Vote } = require('../../models');
 
 // get all users
 router.get('/', (req, res) => {
-  console.log('======================');
-  Post.findAll({
-    attributes: [
-      'id',
-      'post_url',
-      'title',
-      'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    ],
-    order: [['created_at', 'DESC']],
-    include: [
-      {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-        include: {
+    console.log('======================');
+    Post.findAll({
+      attributes: [
+        'id',
+        'post_url',
+        'title',
+        'created_at',
+        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      ],
+      include: [
+        {
+          model: Comment,
+          attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+          include: {
+            model: User,
+            attributes: ['username']
+          }
+        },
+        {
           model: User,
           attributes: ['username']
         }
-      },
-      {
-        model: User,
-        attributes: ['username']
-      }
-    ]
-  })
-    .then(dbPostData => res.json(dbPostData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
+      ]
+    })
+      .then(dbPostData => res.json(dbPostData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+  
+  
 router.get('/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -81,7 +81,7 @@ router.post('/', (req, res) => {
   Post.create({
     title: req.body.title,
     post_url: req.body.post_url,
-    user_id: req.body.user_id
+    user_id: req.session.user_id
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
@@ -125,6 +125,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  console.log('id', req.params.id);
   Post.destroy({
     where: {
       id: req.params.id
