@@ -36,7 +36,8 @@ class Post extends Model {
   }
 }
 
-// create fields/columns for Post model
+// create fields/columns for Post model-post model, table, object
+
 Post.init(
   {
     id: {
