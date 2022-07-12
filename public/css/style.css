@@ -1,10 +1,10 @@
 /* Hero with navbar */
-.link-bar-4 {
+.nav-bar {
     width: 300px;
     height: 22px;
     box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.39);
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -15,7 +15,7 @@
     height: 71px;
     box-shadow: 2px -5px 5px rgba(139, 81, 245, 0.75);
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 60px;
     font-style: italic;
@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.file-music-fill-icon-1 {
+.music-icon-1 {
     width: 22px;
     height: 21px;
     background: #000000;
@@ -34,14 +34,14 @@
     height: 41px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.47);
     color: #000000;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
 }
 
-.file-music-fill-icon-2 {
+.music-icon-2 {
     width: 24px;
     height: 23px;
     background: #000000;
@@ -64,7 +64,7 @@
     width: 366px;
     height: 48px;
     color: #5125ad;
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-weight: 700;
     font-size: 36px;
     text-decoration: underline;
@@ -74,28 +74,31 @@
 
 /* ARTICLE CARD 1 */
 
-.keyboard-arrow-left-icon-3 {
+.arrow-left-icon {
     width: 8px;
     height: 13px;
     background: #9fafc1;
 }
-.keyboard-arrow-left-icon-4 {
+
+.arrow-right-icon {
     width: 8px;
     height: 13px;
     transform: rotate(180deg);
     background: #29323d;
 }
+
 .paragraph-2 {
     width: 76px;
     height: 16px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 10px;
     line-height: 1.5;
     text-align: center;
 }
-.rectangle-3 {
+
+.rectangle-2 {
     width: 224px;
     height: 351px;
     padding: 8px 8px 8px 8px;
@@ -105,6 +108,7 @@
     border-style: solid;
     border-radius: 6px 6px 6px 6px;
 }
+
 .image-placeholder-1 {
     width: 222px;
     height: 170px;
@@ -114,16 +118,18 @@
     border-style: solid;
     border-radius: 6px 6px 0px 0px;
 }
+
 .paragraph-5 {
     width: 183px;
     height: 109px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 16px;
     line-height: 1.3;
     text-align: center;
 }
+
 .keyboard-backspace-icon-3 {
     width: 11px;
     height: 7px;
@@ -133,26 +139,29 @@
     border-width: 1px;
     border-style: solid;
 }
+
 .paragraph-4 {
     width: 157px;
     height: 20px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
 }
+
 .paragraph-3 {
     width: 183px;
     height: 28px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 11px;
     line-height: 1.5;
     text-align: center;
 }
+
 .rectangle-2 {
     width: 76px;
     height: 17px;
@@ -176,26 +185,29 @@
     border-style: solid;
     border-radius: 3px 3px 3px 3px;
 }
+
 .paragraph-6 {
     width: 51px;
     height: 16px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 10px;
     line-height: 1.5;
     text-align: center;
 }
+
 .paragraph-7 {
     width: 157px;
     height: 20px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
 }
+
 .keyboard-backspace-icon-4 {
     width: 11px;
     height: 7px;
@@ -205,26 +217,29 @@
     border-width: 1px;
     border-style: solid;
 }
+
 .paragraph-8 {
     width: 183px;
     height: 109px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 16px;
     line-height: 1.3;
     text-align: center;
 }
+
 .paragraph-9 {
     width: 183px;
     height: 28px;
     color: #5125ad;
-    font-family: "Paprika";
+    font-family: 'Paprika';
     font-weight: bold;
     font-size: 11px;
     line-height: 1.5;
     text-align: center;
 }
+
 .image-placeholder-2 {
     width: 222px;
     height: 170px;
@@ -234,6 +249,7 @@
     border-style: solid;
     border-radius: 6px 6px 0px 0px;
 }
+
 .rectangle-5 {
     width: 224px;
     height: 351px;
@@ -245,4 +261,90 @@
     border-radius: 6px 6px 6px 6px;
 }
 
+/* ARTICLE CARD 3  */
 
+.rectangle-6 {
+    width: 57px;
+    height: 17px;
+    padding: 8px 8px 8px 8px;
+    background: #ffa834;
+    border-color: #d757f6;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.paragraph-10 {
+    width: 57px;
+    height: 16px;
+    color: #5125ad;
+    font-family: 'Paprika';
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.paragraph-11 {
+    width: 157px;
+    height: 20px;
+    color: #5125ad;
+    font-family: 'Paprika';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.keyboard-backspace-icon-5 {
+    width: 11px;
+    height: 7px;
+    transform: rotate(180deg);
+    background: #d68227;
+    border-color: #5125ad;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.paragraph-12 {
+    width: 183px;
+    height: 109px;
+    color: #5125ad;
+    font-family: 'Paprika';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.paragraph-13 {
+    width: 183px;
+    height: 28px;
+    color: #5125ad;
+    font-family: 'Paprika';
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.image-placeholder-3 {
+    width: 222px;
+    height: 170px;
+    background: #ffa834;
+    border-color: #5125ad;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.rectangle-7 {
+    width: 224px;
+    height: 351px;
+    padding: 8px 8px 8px 8px;
+    background: #ffa834;
+    border-color: #d757f6;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px 6px 6px 6px;
+}
