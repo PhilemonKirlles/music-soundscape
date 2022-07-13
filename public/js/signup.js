@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-alert */
 //  attempt to sign the user up
+
 const signupFormHandler = async (event) => {
   event.preventDefault();
 

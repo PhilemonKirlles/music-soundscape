@@ -1,36 +1,22 @@
-const router = require("express").Router();
-const { Comment } = require("../../models");
+const Sequelize = require('sequelize');
+require('dotenv').config();
 
-//create comment
-router.post("/", async (req, res) => {
-    try {
-        const dbCommentData = await Comment.create({
-            comment: req.body.comment,
-            author_id: req.body.author_id,
-            post_id: req.body.post_id,
-        });
-        return res.status(200).json(dbCommentData);
-    } catch (err) {
-        console.log(err);
-        return res.status(500).json(err);
-    }
-});
-
-//delete comment
-router.delete("/:id", async (req, res) => {
-    try {
-        const deleteCommentData = await Comment.destroy({
-            where: {
-                id: req.params.id,
-            },
-        });
-        return res.status(200).json(deleteCommentData);
-    } catch (err) {
-        console.log(err);
-        return res.status(500).json(err);
-    }
-});
-
-module.exports = router;
+let sequelize;
+// sequelize object with .env config parameter
+// "if()" logic to run on heroku or local
+if (process.env.JAWSDB_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+} else {
+  sequelize = new Sequelize(
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
+    {
+      host: 'localhost',
+      dialect: 'mysql',
+      port: 3306,
+    },
+  );
+}
 
 module.exports = sequelize;

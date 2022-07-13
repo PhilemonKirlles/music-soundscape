@@ -1,18 +1,14 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/routes");
-const bcrypt = require("bcrypt");
-const sequelize = require("../config/connection");
-
-// create  User model
+const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
+const sequelize = require('../config/connection');
 
 class User extends Model {
-  //custom instance method to check user password with bcrypt
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-// define table columns and configuration user model, table, object
+// user model, table, object
 User.init(
   {
     id: {
@@ -37,7 +33,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [7],
+        len: [6],
       },
     },
     isAdmin: {
@@ -46,29 +42,23 @@ User.init(
     },
   },
   {
-    //Hooks=lifecycle events: called functions before and after calling sequelize.
-
+    // Hooks = lifecycle events. Functions called before + after calls in sequelize.
     hooks: {
+      // beforeCreate hook is used to work with data before a new instance is created
       async beforeCreate(newUserData) {
-   //encrypt password user passed in
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
-      },
-
-      async beforeUpdate(updatedUserData) {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
-          10
+        // encrypt password user passed in
+        newUserData.password = await bcrypt.hash(
+          newUserData.password,
+          10,
         );
-        return updatedUserData;
+        return newUserData;
       },
     },
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
-  }
+    modelName: 'user',
+  },
 );
 
 module.exports = User;
