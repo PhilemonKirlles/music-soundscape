@@ -12,7 +12,7 @@ const controllers = require('./controllers');
 const helpers = require('./utils/helpers');
 
 // Incorporate the custom helper methods: ./utils/helpers.js
-const handlebars = expressHandlebars.creat({ helpers });
+const handlebars = expressHandlebars.create({ helpers });
 
 // Sets up the Express App
 const app = express();
