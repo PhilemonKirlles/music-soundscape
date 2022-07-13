@@ -1,10 +1,11 @@
-const router = require("express").Router();
-const Post = require("../models/Post");
-const User = require("../models/User");
-const Comment = require("../models/Comment");
+/* eslint-disable no-console */
+const router = require('express').Router();
+const Post = require('../models/post');
+const User = require('../models/User');
+const Comment = require('../models/Comment');
 
-//page load and render post data
-router.get("/:id", async (req, res) => {
+// page load and render post data
+router.get('/:id', async (req, res) => {
   try {
     const postData = await Post.findOne({
       where: {
@@ -13,30 +14,30 @@ router.get("/:id", async (req, res) => {
       include: [
         {
           model: Comment,
-          //joined data
+          // joined data
           include: [
             {
               model: User,
-              attributes: ["id", "username"],
+              attributes: ['id', 'username'],
             },
           ],
         },
         {
           model: User,
-          attributes: ["id", "username"],
+          attributes: ['id', 'username'],
         },
       ],
     });
     const post = postData.get({ plain: true });
     console.log(post);
     if (post) {
-      res.render("post", {
+      res.render('post', {
         loggedIn: req.session.loggedIn,
         loggedInUserData: req.session.loggedInUserData,
         postData: post,
       });
     } else {
-      res.redirect("/");
+      res.redirect('/');
     }
   } catch (err) {
     res.status(500).json(err);
