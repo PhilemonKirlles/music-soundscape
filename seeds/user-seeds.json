@@ -1,0 +1,35 @@
+[
+
+    {
+        "username": "kay",
+        "email": "kay@gmail.com",
+        "password": "10987654321",
+        "isAdmin": false
+    
+    },
+    
+    {
+        "username": "kay",
+        "email": "kay@gmail.com",
+        "password": "1098765",
+        "isAdmin": false
+    
+    },
+    
+    {
+        "username": "nate",
+        "email": "nate@gmail.com",
+        "password": "1098765",
+        "isAdmin": false
+    
+    },
+    
+    {
+        "username": "pmo",
+        "email": "pmo@gmail.com",
+        "password": "1098765",
+        "isAdmin": true
+    
+    }
+    
+    ]
