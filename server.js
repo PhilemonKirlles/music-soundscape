@@ -7,6 +7,8 @@ const path = require('path');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/connection');
 const controllers = require('./controllers');
+const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
 
 // Import the custom helper methods
 const helpers = require('./utils/helpers');

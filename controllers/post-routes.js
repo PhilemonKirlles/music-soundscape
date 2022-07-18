@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const router = require('express').Router();
-const Post = require('../models/post');
+const Post = require('../models/Post');
 const User = require('../models/User');
 const Comment = require('../models/Comment');
 
