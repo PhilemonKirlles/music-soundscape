@@ -1,4 +1,4 @@
-// this code came with the bulma blog template for the hamburger menu on mobile devices
+// this code came with the bulma blog template for the hamburger menu 
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
