@@ -1,4 +1,5 @@
-<article class="post">
+{{> post-info post}}
+
   <div class="title">
     <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
     <span>({{post.post_url}})</span>
@@ -26,7 +27,7 @@
 
 
 <div class="comments">
-  {{#each post.comments}}
+  {{#each this}}
   <section class="comment">
     <div class="meta">
       {{user.username}} on {{created_at}}
