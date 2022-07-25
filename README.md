@@ -1,5 +1,12 @@
 # music-soundscape
 
+Music Soundscape is a music blog and a platform for people to
+share their favorite music and bands with one another.
+By creating new posts linking to related articles or commenting
+on existing posts, the members of Soundscape can engage with one
+another and further educate themselves on their favorite musicians,
+genres of music, etc.
+
 User Story
 
 AS A blogger who writes about music
@@ -13,7 +20,8 @@ Acceptance Criteria
 
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
+THEN I am presented with the homepage, which includes existing blog posts if
+any have been posted; navigation links for the homepage and the dashboard; and the option to log in
 WHEN I click on the homepage option
 THEN I am taken to the homepage
 WHEN I click on any other links in the navigation
@@ -44,3 +52,21 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+
+Deployed: https://PhilemonKirlles.github.io/music-soundscape/
+
+GitHub Repository: https://github.com/PhilemonKirlles/music-soundscape.git
+
+SCREENSHOTS:
+
+Completed Project:
+
+<img src="images/project2a.png">
+
+<img src="images/project2b.png">
+
+<img src="images/project2c.png">
+
+Wireframe 2:
+
+<img src="images/project2wframe2.png">
